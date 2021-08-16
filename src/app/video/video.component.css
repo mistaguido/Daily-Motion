@@ -1,0 +1,13 @@
+#video {
+    display: grid;
+    padding-bottom: 25px;
+}
+
+#thumbnail {
+    max-width: 50%;
+    overflow: hidden;
+}
+
+#details{
+    max-width: 50%;
+}

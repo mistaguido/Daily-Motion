@@ -1,0 +1,7 @@
+div {
+    position:absolute;
+    width: 50%;
+    left: 25%;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,12 @@
+<div id="video">
+    <img id="thumbnail" src="{{video.thumbnail_360_url}}"/>
+    <div id="details">
+        <a id="title" href="https://www.dailymotion.com/video/{{video.id}}" target="_blank">{{video.title}}</a><br/>
+        <div>
+            <img id="creatorImg" style="max-width: 10%;" src="{{video['owner.avatar_80_url']}}"/> {{video["owner.username"]}}
+        </div>
+        <p id="views"> Date: {{video.created_time}} | Views: {{video.views_total}}</p>
+        <input type="button" value="Add to playlist" *ngIf="!inPlaylist" (click)="addVideo(video)"/>
+        <p *ngIf="inPlaylist">Added to playlist</p>
+    </div>
+</div>

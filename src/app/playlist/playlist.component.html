@@ -1,0 +1,11 @@
+<div>
+    <h1>Your playlist</h1>
+    <p *ngIf="videos.length==0">There are no videos</p>
+
+    <input type="button" value="Clear Videos" (click)="clear()"/>
+</div>
+<br>
+<br>
+<div>
+    <app-listing [videos]="videos"></app-listing>
+</div>

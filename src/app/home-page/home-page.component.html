@@ -1,0 +1,9 @@
+<div>
+    <input type="text" #textSearch placeholder="Search for videos..."/>
+    <input type="button" value="Get Videos" (click)="search(textSearch.value)"/>
+</div>
+<br>
+<br>
+<div>
+    <app-listing [videos]="currentList"></app-listing>
+</div>
